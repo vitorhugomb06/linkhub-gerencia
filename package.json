@@ -1,0 +1,24 @@
+{
+  "name": "linkhub-gerencia",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.7",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "@primeuix/themes": "^2.0.3",
+    "@primevue/themes": "^4.5.4",
+    "primeflex": "^4.0.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.5.5",
+    "vue-router": "^4.6.4"
+  }
+}
