@@ -226,7 +226,24 @@ body {
   font-weight: 600;
 }
 
-/* Breadcrumb area */
+/* Breadcrumb bar — strip between topbar and content */
+.app-breadcrumb-bar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  min-height: 40px;
+}
+
+/* Hide the bar when empty (no page provides a breadcrumb) */
+.app-breadcrumb-bar:empty {
+  display: none;
+}
+
+/* Breadcrumb area (legacy, kept for compatibility) */
 .app-breadcrumb {
   background-color: #ffffff;
   border-bottom: 1px solid var(--border-color);
@@ -272,6 +289,42 @@ body {
   font-size: 13px;
 }
 
+/* Page breadcrumb (inline, used inside the breadcrumb bar) */
+.page-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.page-breadcrumb a {
+  color: var(--text-muted);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.15s ease;
+}
+
+.page-breadcrumb a:hover {
+  color: var(--text-secondary);
+}
+
+.page-breadcrumb a i {
+  font-size: 11px;
+}
+
+.page-breadcrumb span {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.page-breadcrumb__current {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
 /* Page content */
 .app-content {
   flex: 1;
@@ -285,15 +338,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .page-title {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: none;
+  letter-spacing: -0.2px;
 }
 
 .page-actions {

@@ -17,6 +17,10 @@ import ProductsPage from './pages/ProductsPage.vue'
 import OrderDetailPage from './pages/OrderDetailPage.vue'
 import LogisticSettingsPage from './pages/LogisticSettingsPage.vue'
 import ProductStockPage from './pages/ProductStockPage.vue'
+import VendasPorCanalPage from './pages/VendasPorCanalPage.vue'
+import RelatoriosPage from './pages/RelatoriosPage.vue'
+import ProdutosMaisVendidosPage from './pages/ProdutosMaisVendidosPage.vue'
+import VendasAnuaisPage from './pages/VendasAnuaisPage.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -29,6 +33,10 @@ const router = createRouter({
     { path: '/pedidos/:id', component: OrderDetailPage },
     { path: '/pedido-detalhe', component: OrderDetailPage },
     { path: '/configuracoes-logisticas', component: LogisticSettingsPage },
+    { path: '/relatorios', component: RelatoriosPage },
+    { path: '/relatorios/vendas-por-canal', component: VendasPorCanalPage },
+    { path: '/relatorios/produtos-mais-vendidos', component: ProdutosMaisVendidosPage },
+    { path: '/relatorios/vendas-anuais', component: VendasAnuaisPage },
   ]
 })
 

@@ -73,7 +73,10 @@
         </div>
       </header>
 
-      <!-- Router view with breadcrumb injected per page -->
+      <!-- Breadcrumb bar (rendered by each page via teleport) -->
+      <div id="breadcrumb-bar" class="app-breadcrumb-bar"></div>
+
+      <!-- Router view -->
       <router-view />
     </div>
   </div>
