@@ -21,6 +21,7 @@ import VendasPorCanalPage from './pages/VendasPorCanalPage.vue'
 import RelatoriosPage from './pages/RelatoriosPage.vue'
 import ProdutosMaisVendidosPage from './pages/ProdutosMaisVendidosPage.vue'
 import VendasAnuaisPage from './pages/VendasAnuaisPage.vue'
+import ImportFieldMappingPage from './pages/ImportFieldMappingPage.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -33,6 +34,7 @@ const router = createRouter({
     { path: '/pedidos/:id', component: OrderDetailPage },
     { path: '/pedido-detalhe', component: OrderDetailPage },
     { path: '/configuracoes-logisticas', component: LogisticSettingsPage },
+    { path: '/produtos/importacoes/de-para-campos', component: ImportFieldMappingPage },
     { path: '/relatorios', component: RelatoriosPage },
     { path: '/relatorios/vendas-por-canal', component: VendasPorCanalPage },
     { path: '/relatorios/produtos-mais-vendidos', component: ProdutosMaisVendidosPage },
