@@ -96,16 +96,13 @@
               🔗 LinkHub
             </span>
           </span>
-          <div class="topbar-env-selector">
-            <div class="env-badge">
-              <i class="pi pi-circle-fill" style="color:#4ade80;font-size:8px"></i>
-              Homologação
-            </div>
-            <div class="env-badge">
-              <i class="pi pi-circle-fill" style="color:#4ade80;font-size:8px"></i>
-              Homologação
-              <i class="pi pi-chevron-down" style="font-size:10px;margin-left:4px"></i>
-            </div>
+        </div>
+
+        <div class="topbar-center">
+          <div class="topbar-company-selector">
+            <i class="pi pi-desktop" style="font-size:14px;color:#94a3b8"></i>
+            <span class="topbar-company-name">Caemmun</span>
+            <i class="pi pi-chevron-down" style="font-size:10px;color:#94a3b8"></i>
           </div>
         </div>
 
@@ -117,9 +114,13 @@
             <i class="pi pi-bell"></i>
             <span v-if="unreadCount > 0" class="notification-bell-badge">{{ unreadCount }}</span>
           </div>
+          <div class="topbar-divider"></div>
           <div class="topbar-user">
             <span class="topbar-user-name">Vitor Hugo Martins</span>
-            <div class="topbar-user-avatar">V</div>
+            <span class="topbar-user-chevron"><i class="pi pi-chevron-down" style="font-size:10px;color:rgba(255,255,255,0.5)"></i></span>
+            <div class="topbar-user-avatar">
+              <i class="pi pi-user" style="font-size:14px"></i>
+            </div>
           </div>
         </div>
       </header>

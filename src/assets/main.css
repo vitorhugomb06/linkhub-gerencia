@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
   --header-bg-color: #060e2c;
@@ -108,6 +109,7 @@ body {
   padding: 0 24px;
   flex-shrink: 0;
   z-index: 99;
+  position: relative;
 }
 
 .topbar-left {
@@ -225,6 +227,51 @@ body {
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
+}
+
+/* Topbar center - company selector */
+.topbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.topbar-company-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.topbar-company-selector:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+.topbar-company-name {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Topbar divider */
+.topbar-divider {
+  width: 1px;
+  height: 24px;
+  background: rgba(255,255,255,0.2);
+  margin: 0 4px;
+}
+
+.topbar-user-chevron {
+  display: flex;
+  align-items: center;
 }
 
 /* Breadcrumb bar — strip between topbar and content */
@@ -797,4 +844,26 @@ body {
 .submenu-fade-leave-to {
   opacity: 0;
   transform: translateX(-4px);
+}
+
+
+/* ── PrimeVue Select global override — azul do sistema ───────────────────── */
+
+.p-select:focus,
+.p-select.p-focus,
+.p-select:focus-within {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2) !important;
+}
+
+.p-select-option.p-select-option-selected,
+.p-select-option.p-highlight {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+.p-select-option:hover,
+.p-select-option.p-focus {
+  background: #eff6ff !important;
+  color: #3b82f6 !important;
 }
